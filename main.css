@@ -2,6 +2,19 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: 'Mulish';
+  color: #444349;
+}
+
+.tagline, .date, h3 {
+  font-family: 'Libre Baskerville';
+  }
+
+ 
+
+
+
 /* ==== HEADER STYLE ====*/
 
 .cover {
@@ -10,7 +23,6 @@
   height: 100vh;
   width: 100%;
   color: hsla(0,0%,100%,.7);
-  font-family: 'Cormorant Garamond', serif;
   text-align: center;
   display: table;
 }
@@ -18,11 +30,6 @@
 .wrapper {
   display: table-cell;
   vertical-align: middle;
-}
-
-.tagline, .date {
-  font-size: 2rem;
-  font-family: 'Libre Baskerville';
 }
 
 .date {
@@ -40,6 +47,7 @@
   background: hsla(100,0%,0%,.6);
   margin: 0 auto;
   padding: .5rem 1rem;
+  border-radius: 3px;
 }
 
 .tagline {
@@ -47,6 +55,7 @@
   letter-spacing: .1rem;
   font-variant: small-caps;
   line-height: 1.5rem;
+  font-size: 2rem;
 }
 
 .tagline::after {
@@ -101,6 +110,8 @@ footer {
   text-align: center;
   display: table;
   background: #606060;
+  font-size: 1rem;
+  color: hsla(0,0%,100%,.7);
 }
 
 footer a{
@@ -115,4 +126,50 @@ footer a:hover {
 .footer {
   display: table-cell;
   vertical-align: middle;
+}
+
+/* ==== MAIN STYLES ====*/
+
+main {
+  background: url(./assets/wedding-landing-background.png) no-repeat center;
+  background-size: cover;
+}
+
+.locations, .program {
+  width: 90%;
+  margin: 0 auto;
+  padding: .5rem 1rem;
+  text-align: center;
+}
+
+.locations img {
+  height: 8rem;
+}
+
+.locations div, .program div, .program ul {
+  font-weight: 700;
+}
+
+h2 {
+  margin-top: 1.5rem;
+  font-size: 3rem;
+  font-family: 'Great Vibes';
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+h2, h3, img {
+  margin-bottom: 1.5rem;
+}
+
+.info::after {
+  content: "";
+  margin: 1.5rem auto;
+  background: #444349;
+  height: .2rem;
+  width: 25vw;
+  display: block;
 }
