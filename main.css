@@ -9,12 +9,17 @@ body {
 
 .tagline, .date, h3 {
   font-family: 'Libre Baskerville';
-  }
+}
+
+.headline, .program, .faq {
+  color: #d2ba87;
+}
+
+.dark-background, .program, .faq {
+  background: hsla(100,0%,0%,.6);
+}
 
  
-
-
-
 /* ==== HEADER STYLE ====*/
 
 .cover {
@@ -44,7 +49,6 @@ body {
 }
 
 .dark-background {
-  background: hsla(100,0%,0%,.6);
   margin: 0 auto;
   padding: .5rem 1rem;
   border-radius: 3px;
@@ -75,7 +79,6 @@ body {
   font-size: 3rem;
   margin: 2rem 0;
   font-family: 'Great Vibes';
-  color: #d2ba87;
 }
 
 @media (min-width: 768px) {
@@ -114,7 +117,7 @@ footer {
   color: hsla(0,0%,100%,.7);
 }
 
-footer a{
+ a{
   text-decoration: none;
   color: #bd806e;
 }
@@ -135,18 +138,19 @@ main {
   background-size: cover;
 }
 
-.locations, .program {
+.locations, .program, .gift, .faq {
   width: 90%;
   margin: 0 auto;
   padding: .5rem 1rem;
   text-align: center;
 }
 
-.locations img {
+
+ img {
   height: 8rem;
 }
 
-.locations div, .program div, .program ul {
+.locations div, .program div, .program ul, .gift p, .question, .anwser {
   font-weight: 700;
 }
 
@@ -161,7 +165,7 @@ h3 {
   font-weight: bold;
 }
 
-h2, h3, img {
+h2, h3, img, .program div, p {
   margin-bottom: 1.5rem;
 }
 
@@ -169,6 +173,27 @@ h2, h3, img {
   content: "";
   margin: 1.5rem auto;
   background: #444349;
+  height: .2rem;
+  width: 25vw;
+  display: block;
+}
+
+.program, .faq {
+  width: 100%;
+}
+
+.program ul, .question, .anwser {
+  text-align: left;
+}
+
+.program div {
+  font-style: italic;
+}
+
+.group::after {
+  content: "";
+  margin: 1.5rem auto;
+  background: #d2ba87;;
   height: .2rem;
   width: 25vw;
   display: block;
