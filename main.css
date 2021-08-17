@@ -19,7 +19,6 @@ body {
   background: hsla(100,0%,0%,.6);
 }
 
- 
 /* ==== HEADER STYLE ====*/
 
 .cover {
@@ -122,7 +121,7 @@ footer {
   color: #bd806e;
 }
 
-footer a:hover {
+ a:hover {
   color: #eda087;
 }
 
@@ -136,9 +135,10 @@ footer a:hover {
 main {
   background: url(./assets/wedding-landing-background.png) no-repeat center;
   background-size: cover;
+  line-height: 1.5rem;
 }
 
-.locations, .program, .gift, .faq {
+.locations, .program, .gift, .faq, .contact {
   width: 90%;
   margin: 0 auto;
   padding: .5rem 1rem;
@@ -148,10 +148,6 @@ main {
 
  img {
   height: 8rem;
-}
-
-.locations div, .program div, .program ul, .gift p, .question, .anwser {
-  font-weight: 700;
 }
 
 h2 {
@@ -182,12 +178,16 @@ h2, h3, img, .program div, p {
   width: 100%;
 }
 
-.program ul, .question, .anwser {
+.program ul, .question, .anwser  {
   text-align: left;
 }
 
-.program div {
+.program p {
   font-style: italic;
+}
+
+.group {
+  line-height: 1rem;
 }
 
 .group::after {
@@ -197,4 +197,38 @@ h2, h3, img, .program div, p {
   height: .2rem;
   width: 25vw;
   display: block;
+}
+
+.question {
+  font-weight: bolder;
+  line-height: 1rem;
+}
+
+
+@media (min-width: 768px) {
+  
+  .info  {
+    display: inline-block;
+    width: 30%;
+    margin: 0 auto;
+    padding: .5rem 1rem;
+  }
+
+  .info::after, .group::after {
+    display: none;
+  }
+
+  .p-wrapper {
+    width: 30vw;
+    margin: 0 auto;
+}
+
+  .group {
+    display: inline-block;
+    width: 30%;
+    margin: .5rem;
+    padding: 1.5rem;
+    vertical-align: top;
+  }
+
 }
