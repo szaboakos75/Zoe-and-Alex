@@ -7,7 +7,7 @@ body {
   color: #444349;
 }
 
-.tagline, .date, h3 {
+.tagline, .date, h3, .gift p, .contact p {
   font-family: 'Libre Baskerville';
 }
 
